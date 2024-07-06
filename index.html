@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="gallery">
+        <a href="/img/img1.jpeg">
+            <img src="/img/img1.jpeg"/>
+        </a>
+        <a href="/img/img2.jpg">
+            <img src="/img/img2.jpg"/>
+        </a>
+        <a href="/img/img3.jpg">
+            <img src="/img/img3.jpg"/>
+        </a>
+        <a href="/img/img4.jpg">
+            <img src="/img/img4.jpg"/>
+        </a>
+        <a href="/img/img5.jpg">
+            <img src="/img/img5.jpg"/>
+        </a>
+        <a href="/img/img6.jpg">
+            <img src="/img/img6.jpg"/>
+        </a>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+    <!-- Custom js -->
+    <script>
+        // Gallery tag 
+        let gallery = document.getElementById("gallery")
+        lightGallery(gallery, {
+            plugins: [lgShare,lgRotate,lgAutoplay,lgThumbnail,lgZoom,lgFullscreen],
+            download : true,
+            controls : true,
+            counter : true
+        })
+    </script>
+</body>
+</html>
